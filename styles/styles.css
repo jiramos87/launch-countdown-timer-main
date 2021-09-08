@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+    font-family: 'Red Hat Text', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 375px;
+    height: auto;
+    background-color: hsl(235, 16%, 14%);
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+
+    background-image: url(../images/bg-stars.svg);
+    background-size: 375px ;
+    background-repeat:repeat-y;
+}
+
+
+.header-div {
+    color: white;
+    font-weight: 700;
+    margin-top: 190px;
+    margin-bottom: 60px;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: 8px;
+}
+
+.counter-div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 220px;
+    justify-content: space-around;
+}
+
+.card-div {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: auto;
+}
+
+.number-card-div {
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
+    border-radius: 7px;
+    padding: 4px 4px 4px 4px;
+    background-color: hsl(236, 21%, 26%);
+
+
+}
+
+.number {
+    position: relative;
+    margin: 10px auto;
+    color: hsl(345, 95%, 68%);
+    font-size: 30px;
+    text-align: center;
+}
+
+.counter-text {
+    color: hsl(237, 18%, 59%);
+    font-size: 14px;
+    text-align: center;
+}
+
+.hills {
+    width: auto;
+    height: 75px;
+    background-image: url(../images/pattern-hills.svg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-color: hsl(235, 16%, 14%);
+}
+
+.hills-bottom {
+    margin-top: -1px;
+    height: 200px;
+    background-color: hsl(273, 24%, 18%);
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.facebook {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-image: url(../images/icon-facebook.svg);
+    background-size: contain;
+}
+
+.pinterest {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-image: url(../images/icon-pinterest.svg);
+    background-size: contain;
+}
+
+.instagram {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-image: url(../images/icon-instagram.svg);
+    background-size: contain;
+
+}
+
+a:hover {
+    background-color: hsl(345, 95%, 68%);
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        width: 1440px;
+        background-size: 1440px ;
+    }
+
+
+    .counter-div {
+        margin-bottom: 220px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .card-div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 140px;
+        height: auto;
+    }
+
+    .number-card-div {
+        width: 140px;
+        height: 140px;
+        margin: 10px auto;
+        border-radius: 9px;
+        padding: 8px 8px 8px 8px;
+        background-color: hsl(236, 21%, 26%);
+
+
+    }
+
+    .number {
+        position: relative;
+        margin: 17px auto;
+        color: hsl(345, 95%, 68%);
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .counter-text {
+        color: hsl(237, 18%, 59%);
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hills {
+        height: 85px;
+        background-size: 100%;
+    }
+}
