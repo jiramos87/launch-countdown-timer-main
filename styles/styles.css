@@ -36,39 +36,64 @@ body {
     display: flex;
     flex-direction: row;
     margin-bottom: 220px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .card-div {
     display: flex;
     flex-direction: column;
-    width: 80px;
+    width: 75px;
     height: auto;
+    
 }
 
 .number-card-div {
-    width: 60px;
-    height: 60px;
-    margin: 5px auto;
-    border-radius: 7px;
+    
+    width: 75px;
+    height: 70px;
+    margin: 2px auto;
     padding: 4px 4px 4px 4px;
-    background-color: hsl(236, 21%, 26%);
+    
 
 
 }
 
-.number {
+.number-rectangle-up {
     position: relative;
-    margin: 10px auto;
+    height: 50%;
+    background-color: hsl(273, 24%, 18%);
+    border-radius: 7px;
+    box-shadow: 0px 4px 0px hsl(234, 17%, 12%);
+    z-index: 1;
+}
+
+.number-rectangle-down {
+  
+    position: relative;
+    height: 50%;
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 7px;
+    box-shadow: 0px 4px 0px hsl(234, 17%, 12%);
+    z-index: 1;
+}
+
+.number {
+    
+    
+    position: relative;
+    margin: -54px 10px 10px 10px;
     color: hsl(345, 95%, 68%);
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
+    z-index: 2;
 }
 
 .counter-text {
     color: hsl(237, 18%, 59%);
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 6px;
     text-align: center;
+    letter-spacing: 4px;
 }
 
 .hills {
@@ -128,6 +153,11 @@ a:hover {
         background-size: 1440px ;
     }
 
+    .header-div {
+        margin-bottom: 45px;
+        font-size: 11px;
+    }
+
 
     .counter-div {
         margin-bottom: 220px;
@@ -150,14 +180,13 @@ a:hover {
         margin: 10px auto;
         border-radius: 9px;
         padding: 8px 8px 8px 8px;
-        background-color: hsl(236, 21%, 26%);
 
 
     }
 
     .number {
         position: relative;
-        margin: 17px auto;
+        margin: -108px 10px 10px 10px;
         color: hsl(345, 95%, 68%);
         font-size: 70px;
         text-align: center;
